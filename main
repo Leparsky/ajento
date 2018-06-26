@@ -108,17 +108,7 @@ def main():
 
 
     #lstGoodPages.append("https://ajento.ru/p336841792-ajento-muzhskoj-bomber.html")
-    url   = ""#url
-    cost  = ""# Цена
-    size  = ""# Размер
-    art   = ""# Артикул
-    color = ""# Цвет
-    edizm = ""# Единица    измерения
-    descr = ""# // Описание
-    album = ""# // Альбом
-    position = ""# Позиция
-    picture = ""# // Ссылка на картинку
-    name = ""# Название
+
     wb = Workbook()
     ws = wb.active
     pagesproxycount = 30
@@ -145,6 +135,17 @@ def main():
 
     i=1
     for page in lstGoodPages:
+        url = ""  # url
+        cost = ""  # Цена
+        size = ""  # Размер
+        art = ""  # Артикул
+        color = ""  # Цвет
+        edizm = ""  # Единица    измерения
+        descr = ""  # // Описание
+        album = ""  # // Альбом
+        position = ""  # Позиция
+        picture = ""  # // Ссылка на картинку
+        name = ""  # Название
         get_page(page, driver)
         i+=1
         print(page)
